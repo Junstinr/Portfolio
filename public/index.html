@@ -65,13 +65,17 @@
 
 
     <!--Main Content-->
-    <div class="flex-1 overflow-y-auto p-10">
+    <div class="flex-1 overflow-y-auto">
       <!-- Add the following classes to the <div> element -->
       <section id="home">
           <!-- Content here -->
             <!--About Me-->
-        <div class="bg-gray-100 grid place-items-center h-screen flex justify-center">
-            <div>
+
+        <div ></div>
+
+        
+        <div id="particles-js" class="bg-gray-100 relative h-screen">
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <p class="animate-pulse-slow text-gradient-to-r from-indigo-500 flex justify-center font-mono text-4xl md:text-5xl lg:text-6xl font-bold" style="background-image: linear-gradient(141deg, #adf1e0, #8075ff 28%, #ff7171 98%);
                 text-align: center; 
                 letter-spacing: -1.25px;
@@ -81,7 +85,7 @@
                 </p>
                 
                 <br>
-                <p class="flex justify-center text-lg">
+                <p class="flex justify-center text-center text-lg">
                     I'm a software developer from the University at Buffalo.</span>
                 </p>
 
@@ -101,11 +105,13 @@
 
                 <br>
                 <div class="flex justify-center gap-10">
-                    <a class="rounded p-2 text-white bg-gradient-to-br from-gray-400 to-gray-800 hover:scale-110 transition ease-in duration-200 cursor-pointer">Resume</a>
+                    <a class="rounded p-2 text-white bg-gradient-to-br from-gray-400 to-gray-800 hover:scale-110 transition ease-in duration-200 cursor-pointer" href="/Junstin Reh.pdf" target="_blank">Resume</a>
                     <a class="border-2 border-gray-400 rounded p-2 hover:bg-gradient-to-tr from-gray-400 to-gray-800 transition ease-in duration-200 hover:border-0 hover:scale-110 hover:text-white cursor-pointer" href="https://github.com/Junstinr" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="/particles.js"></script>
+        <script type="text/javascript" src="/app.js"></script>
       </section>
 
 
@@ -114,51 +120,112 @@
         <!--Project-->
       <section id="projects">
         <p class="flex justify-center font-extrabold mb-10 text-2xl">My Projects</p>
-        <div class="h-fit bg-gray-100 flex justify-center grid grid-cols-2 grid-rows-2 gap-10">
+        <div class="h-fit bg-gray-100 grid grid-cols-1 gap-10">
 
-            <div class="bg-gray-200 rounded-lg w-96 h-96 flex flex-col justify-center items-center p-5">
-                <p class="text-2xl font-bold">Room8</p>
-                <img class="w-24 h-24 rounded-full mt-4 mb-4" src="img/temp-logo.png" alt="logo">
-                <p class="text-center">
-                    Room8 is a mobile app that simplifies roommate living. It helps users communicate, 
-                    manage tasks, and split bills seamlessly,
-                    resolving common roommate issues for a stress-free living experience.
-                </p>
+          <div class="bg-gray-200 lg:flex md:flex rounded-lg w-5/6 h-fit p-5 mx-auto shadow-xl">
+            <div class="w-auto h-auto bg-gray-800 p-10 rounded-lg shadow-lg shadow-gray-400">
+              <p class="text-2xl font-bold flex justify-center mt-5 text-white">Room8</p>
+              <img class="w-20 h-20 shadow-black shadow-lg rounded-full mt-4 mb-4 mx-auto" src="img/temp-logo.png" alt="logo">
             </div>
-            
+            <div class="lg:w-3/4 h-full p-3">
+              <p class="flex justify-start text-start">
+                Room8 is a web app that simplifies roommate living. It helps users communicate, 
+                manage tasks, and split bills seamlessly,
+                resolving common roommate issues for a stress-free living experience.
+                
+              </p>
 
-            <div class="bg-gray-200 rounded-lg w-96 h-96 flex flex-col justify-center items-center p-5 max-w-screen-sm">
-                <p class="text-2xl font-bold">TopHat</p>
-                <img class="w-20 h-20 rounded-full mt-4 mb-4" src="img/tophat.png" alt="logo">
-                <p class="text-center">
-                    Worked in a five-member team to clone Top Hat, a powerful course management website.
+              <br>
+              <br>
+
+              <div class="flex justify-start text-center items-center">
+                <span class="text-gray-500 font-semibold">Made with:</span> 
+                <div class="grid grid-cols-5 place-items-center">
+                  <img class="w-8 h-8" src="img/html.png" alt="html">
+                  <img class="w-8 h-8" src="img/css.png" alt="css">
+                  <img class="w-8 h-8" src="img/javascript.png" alt="javascript">
+                  <img class="w-10 h-7" src="img/php.png" alt="php">
+                  <img class="w-13 h-7" src="img/sql.png" alt="sql">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="bg-gray-200 lg:flex md:flex rounded-lg w-5/6 h-fit p-5 mx-auto shadow-xl">
+            <div class="w-auto h-auto bg-gray-800 p-10 rounded-lg shadow-lg shadow-gray-400">
+              <p class="text-2xl font-bold flex justify-center text-white">TopHat Clone</p>
+              <img class="w-20 h-20 shadow-black shadow-lg rounded-full mt-4 mb-4 mx-auto bg-white" src="img/tophat.png" alt="logo">
+            </div>
+            <div class="lg:w-3/4 h-full p-3">
+              <p class="flex justify-start text-start">
+                Worked in a five-member team to clone Top Hat, a powerful course management website.
                     Developed using Python, Flask, and MongoDB with a focus on seamless backend/frontend integration.
                     Integrated user authentication, real-time communication, and data management 
                     for secure login/register, course creation, and enrollment.
-                </p>
-            </div>
-
-            <div class="bg-gray-200 rounded-lg w-96 h-96 flex flex-col justify-center items-center p-5 max-w-screen-sm">
-              <p class="text-2xl font-bold">Room8</p>
-              <img class="w-20 h-20 rounded-full mt-4 mb-4" src="img/tophat.png" alt="logo">
-              <p class="text-center">
-                  Worked in a five-member team to clone Top Hat, a powerful course management website.
-                  Developed using Python, Flask, and MongoDB with a focus on seamless backend/frontend integration.
-                  Integrated user authentication, real-time communication, and data management 
-                  for secure login/register, course creation, and enrollment.
               </p>
+              <br>
+              <br>
+              <div class="flex justify-start text-center items-center">
+                <span class="text-gray-500 font-semibold">Made with:</span> 
+                <div class="grid grid-cols-3 place-items-center">
+                  <img class="w-12 h-8" src="img/python.png" alt="python">
+                <img class="w-13 h-8" src="img/mongodb.png" alt="mongodb">
+                <img class="w-14 h-9" src="img/flask.png" alt="flask">
+                </div>
+                
+              </div>
+            </div>
           </div>
 
-          <div class="bg-gray-200 rounded-lg w-96 h-96 flex flex-col justify-center items-center p-5 max-w-screen-sm">
-            <p class="text-2xl font-bold">Room8</p>
-            <img class="w-20 h-20 rounded-full mt-4 mb-4" src="img/tophat.png" alt="logo">
-            <p class="text-center">
-                Worked in a five-member team to clone Top Hat, a powerful course management website.
-                Developed using Python, Flask, and MongoDB with a focus on seamless backend/frontend integration.
-                Integrated user authentication, real-time communication, and data management 
-                for secure login/register, course creation, and enrollment.
-            </p>
-        </div>
+
+          <div class="bg-gray-200 lg:flex md:flex rounded-lg w-5/6 h-fit p-5 mx-auto shadow-xl">
+            <div class="w-auto h-auto bg-gray-800 p-7 rounded-lg shadow-lg shadow-gray-400">
+              <p class="text-2xl font-bold flex justify-center text-white">Stock Predictor</p>
+              <img class="w-20 h-20 shadow-black shadow-lg rounded-full mt-4 mb-4 mx-auto bg-white" src="img/stock.png" alt="logo">
+            </div>
+            <div class="lg:w-3/4 h-full p-3">
+              <p class="flex justify-start text-start">
+                  Collaborated with a team of three people to research and implement various
+                  machine learning algorithms such as Linear Regression, Ridge Regression, and Lasso Regression to
+                  analyze and predict stock market trends.
+                  Utilized real-world historical data to train algorithms, resulting in a 93% of accuracy in prediction.
+              </p>
+              <br>
+              <br>
+              <br>
+              <div class="flex justify-start text-center items-center">
+                <span class="text-gray-500 font-semibold">Made with:</span> 
+                <div class="grid grid-cols-1 place-items-center">
+                  <img class="w-12 h-8" src="img/python.png" alt="python">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-200 lg:flex md:flex rounded-lg w-5/6 h-fit p-5 mx-auto shadow-xl">
+            <div class="w-auto h-auto bg-gray-800 p-7 rounded-lg shadow-lg shadow-gray-400">
+              <p class="text-2xl font-bold flex justify-center text-white">Movie Recommendation</p>
+              <img class="w-20 h-20 shadow-black shadow-lg rounded-full mt-4 mb-4 mx-auto bg-white" src="img/netflix.png" alt="logo">
+            </div>
+            <div class="lg:w-3/4 h-full p-3">
+              <p class="flex justify-start text-start">
+                Collaborated with a partner to design and implement a recommended system,
+                leveraging Netflix's database to recommend movies to users based on preferences and past movie ratings.
+              </p>
+              <br>
+              <br>
+              <br>
+              <div class="flex justify-start text-center items-center">
+                <span class="text-gray-500 font-semibold">Made with:</span> 
+                <div class="grid grid-cols-1 place-items-center">
+                  <img class="w-14 h-6" src="img/scala.png" alt="scala">
+                </div>
+                
+              </div>
+            </div>
+          </div>
             
           
         </div>
@@ -166,10 +233,10 @@
        
 
         <!--About Me-->
-        <section id="aboutMe" class="flex justify-center">
+        <section id="aboutMe" class="flex justify-center mt-40">
           <div class="h-fit text-gray-800 bg-gray-100">
               <p class="flex justify-center font-extrabold mb-10  text-2xl">About Me</p>
-              <div class="lg:ml-80 lg:mr-80 md:ml-52 md:mr-52 sm:ml-32 sm:mr-32">
+              <div style="margin-left: 20%; margin-right: 20%;">
                   <p class="animate-puls-slow text-2xl font-bold" style="background-image: linear-gradient(141deg, #adf1e0, #8075ff 28%, #ff7171 98%);
                       letter-spacing: -1.25px;
                       -webkit-background-clip: text;
@@ -187,12 +254,12 @@
               <br>
               <p class="flex justify-center">Here are some of fun facts about me:</p>
               <div class="flex justify-center">
-                  <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:gap-10 md:gap-20 lg:gap-40 mt-10">
+                  <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 md:gap-20 lg:gap-30 mt-10">
                       
                       <div class="relative">
-                        <div class="bg-white rounded shadow-md flex flex-col items-center justify-center p-3 w-60 h-80 group">
+                        <div class="bg-gray-200 rounded shadow-md flex flex-col items-center justify-center p-3 w-72 h-80 group">
                           <div class="relative">
-                            <img class="object-cover" src="img/gym2.gif" alt="Gym">
+                            <img class="object-cover" src="img/gym.png" alt="Gym">
                             <div class="overlay absolute inset-0 bg-white bg-opacity-75 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             <p class="overlay-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-black opacity-0 group-hover:opacity-100 transition-opacity">I like to stay in shape.</p>
                           </div>
@@ -200,7 +267,7 @@
                       </div>
 
                       <div class="relative">
-                        <div class="bg-white rounded shadow-md flex flex-col items-center justify-center p-3 w-60 h-80 group">
+                        <div class="bg-gray-200 rounded shadow-md flex flex-col items-center justify-center p-3 w-72 h-80 group">
                           <div class="relative">
                             <img class="object-cover" src="img/hinata-anime.gif" alt="Volleyball">
                             <div class="overlay absolute inset-0 bg-white bg-opacity-75 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -210,7 +277,7 @@
                       </div>
 
                       <div class="relative">
-                          <div class="bg-white rounded shadow-md flex flex-col items-center justify-center p-3 w-60 h-80 group">
+                          <div class="bg-gray-200 rounded shadow-md flex flex-col items-center justify-center p-3 w-72 h-80 group">
                             <div class="relative">
                               <img class="object-cover" src="img/pad-thai.jpeg" alt="Food">
                               <div class="overlay absolute inset-0 bg-white bg-opacity-75 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -218,7 +285,7 @@
                             </div>
                           </div>
                       </div>
-
+<!--
                       <div class="relative">
                         <div class="bg-white rounded shadow-md flex flex-col items-center justify-center p-3 w-60 h-80 group">
                           <div class="relative">
@@ -248,22 +315,25 @@
                           </div>
                         </div>
                       </div>
+                      -->
                   </div>
               </div>
           </div>
+
         </section>
 
         <!--Contat-->
         
-        <section id="contact" class="h-fit .bg-gray-100 mt-20 mb-20 lg:ml-80 lg:mr-80">
+        <section id="contact" class="h-fit bg-gray-100 mt-20 mb-20">
 
             <p class="flex justify-center font-extrabold text-2xl mb-10">Contact Me</p>
 
             <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
               <!-- Place your card elements here -->
-              <div class="bg-gray-200 shadow-xl rounded-lg p-7 w-64 h-64 hover:scale-110">
+              
+              <div class="bg-gray-200 shadow-xl rounded-lg p-7 w-64 h-64 hover:scale-110 flex flex-col justify-center items-center mx-auto">
                 <!-- Card content -->
-                <div>
+                <a href="mailto: junstin345@gmail.com">
                   <br>
                   <div class="flex justify-center fill-current text-gray-800">
                       <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
@@ -272,24 +342,24 @@
                   <p class="flex justify-center font-extrabold">Email</p>
                   <br>
                   <p class="flex justify-center">Junstin345@gmail.com</p>
-                </div>
+                </a>
               </div>
               
-              <div class="bg-gray-200 shadow-xl rounded-lg p-7 w-64 h-64 hover:scale-110">
-                <!-- Card content -->
-                <a href="https://github.com/Junstinr" target="_blank" rel="noopener noreferrer">
-                  <br>
-                  <div class="flex justify-center fill-current text-gray-800">
-                      <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                  </div>
-                  <br>
-                  <p class="flex justify-center font-extrabold">GitHub</p>
-                  <br>
-                  <p class="flex justify-center">Junstinr</p>
-              </a>
+              <div class="bg-gray-200 shadow-xl rounded-lg p-7 w-64 h-64 hover:scale-110 flex justify-center items-center mx-auto">
+                  <!-- Card content -->
+                  <a href="https://github.com/Junstinr" target="_blank" rel="noopener noreferrer">
+                    <br>
+                    <div class="flex justify-center fill-current text-gray-800">
+                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <br>
+                    <p class="flex justify-center font-extrabold">GitHub</p>
+                    <br>
+                    <p class="flex justify-center">Junstinr</p>
+                  </a>
               </div>
               
-              <div class="bg-gray-200 bg-gradient-to-r shadow-xl rounded-lg p-7 w-64 h-64 hover:scale-110">
+              <div class="bg-gray-200 bg-gradient-to-r shadow-xl rounded-lg p-7 w-64 h-64 hover:scale-110 flex justify-center mx-auto">
                 <!-- Card content -->
                 <a href="https://www.linkedin.com/in/junstin-reh/" target="_blank" rel="noopener noreferrer">  
                   <br>
@@ -305,14 +375,14 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="bg-gray-200 shadow-2xl p-10 mt-10 rounded-lg w-1/2">
+                <div class="bg-gray-200 shadow-2xl p-10 mt-10 rounded-lg w-96">
                     <p class="flex justify-center mt-5">Send Email</p>
                     <br>
                     <form class="max-w-full" action="">
                         <input class="mt-5 border rounded h-12 p-2 w-full" type="text" id="name" name="name" placeholder="Name">
                         <br>
-                        <input class="mt-5 border rounded h-12 p-2 w-full" id="email" name="email" placeholder="Email">
-                        <textarea class="mt-5 border rounded h-40 w-full" id="message" name="message" placeholder="Your Message"></textarea>
+                        <input class="mt-5 border rounded h-12 p-2 w-full" id="email" name="email" placeholder="Your Email">
+                        <textarea class="mt-5 border rounded h-40 w-full p-2" id="message" name="message" placeholder="Your Message"></textarea>
                         <button class="border-2 bg-gray-800 text-gray-200 rounded-lg p-2 mt-5 float-right">Send</button>
                     </form>
                 </div>
