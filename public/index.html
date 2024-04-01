@@ -119,20 +119,14 @@
               </div>
 
               <!-- CUSTOM ANIMATION WON'T SHOW UP ON LIVE SERVER, ONLY SHOW ON ACTUAL SERVER -->
-              <div class="flex justify-center mt-40">
-                <div>
-                  <svg class="animate-pulse " xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                    <path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/>
-                  </svg>
-                  <svg class="animate-pulse-slow" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/>
-                  </svg>
-                  <svg class="animate-pulse-slower" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/>
-                  </svg>
-                </div>
-
+              <div class="flex justify-center mt-16 xl:mt-40">
+                <svg class="arrows">
+                  <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                  <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                  <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
               </div>
+  
 
 
             </div>
@@ -537,18 +531,18 @@
       sections.forEach(section => observer.observe(section));
     </script>
 
-<script>
-  const menuToggle = document.getElementById("menuToggle");
-  const navMenu = document.getElementById("navMenu");
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
 
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("hidden");
-    navMenu.classList.toggle("grid");
-    navMenu.classList.toggle("w-1/3");
-    navMenu.classList.toggle("z-30");
-    menuToggle.classList.toggle("z-40");
-  });
-</script>
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+      navMenu.classList.toggle("grid");
+      navMenu.classList.toggle("w-1/3");
+      navMenu.classList.toggle("z-30");
+      menuToggle.classList.toggle("z-40");
+    });
+  </script>
     
     <style>
       nav a.active {
@@ -557,17 +551,55 @@
       }
     </style>
 
-<style>
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
+  <style>
+    .arrows {
+    width: 60px;
+    height: 72px;
+    /* position: absolute; */
+    left: 50%;
+    margin-left: -30px;
+    margin-top: 50px;
+    bottom: 20px;
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+
+    .arrows path {
+      stroke: #6b7280;
+      fill: transparent;
+      stroke-width: 1px;  
+      animation: arrow 2s infinite;
+      -webkit-animation: arrow 2s infinite; 
     }
-  }
-</style>
+
+    @keyframes arrow
+    {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+    }
+
+    @-webkit-keyframes arrow /*Safari and Chrome*/
+    {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+    }
+
+    .arrows path.a1 {
+      animation-delay:-1s;
+      -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    }
+
+    .arrows path.a2 {
+      animation-delay:-0.5s;
+      -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    }
+
+    .arrows path.a3 { 
+      animation-delay:0s;
+      -webkit-animation-delay:0s; /* Safari 和 Chrome */
+    }
+  </style>
 </body>
 </html>
