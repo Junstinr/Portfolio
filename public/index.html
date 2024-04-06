@@ -8,6 +8,7 @@
   <script src="https://cdn-tailwindcss.vercel.app/"></script>
   <title>Junstin Reh</title>
   <link href="/output.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
     
 </head> 
 
@@ -88,7 +89,7 @@
               </p>
               
               <br>
-              <p class="flex justify-center text-center text-lg">
+              <p id="intro" class="flex justify-center text-center text-lg">
                   I'm a software developer from the University at Buffalo.</span>
               </p>
 
@@ -118,12 +119,9 @@
                   </a>
               </div>
 
-              <!-- CUSTOM ANIMATION WON'T SHOW UP ON LIVE SERVER, ONLY SHOW ON ACTUAL SERVER -->
-
-  
-
-
             </div>
+
+            <!-- CUSTOM ANIMATION WON'T SHOW UP ON LIVE SERVER, ONLY SHOW ON ACTUAL SERVER -->
             <div class="absolute bottom-1 left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <svg class="arrows">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -136,22 +134,72 @@
         <script type="text/javascript" src="app.js"></script>
       </section>
 
-
-
-
         <!--Project-->
       <section id="projects">
         <p class="flex justify-center font-extrabold mb-10 text-2xl">My Projects</p>
-        <div class="h-fit bg-gray-100 grid grid-cols-1 gap-10">
+        <div id="card" class="h-fit bg-gray-100 grid grid-cols-1 gap-10">
+
+          <!-- LiftLog -->
+          <div class="grid grid-cols-1 md:grid-cols-3 h-auto lg:h-80 w-5/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
+            <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 flex items-center justify-center">
+              <div>
+                <p class="text-2xl font-bold flex justify-center mt-5 text-white">LiftLog</p>
+                <img class="w-20 h-20 shadow-black shadow-lg rounded-full mt-4 mb-4 mx-auto" src="img/lift-log/lift-log.png" alt="logo">
+                
+              </div>
+              <!-- <img class="" src="img/home.png" alt="home"> -->
+            </div>
+
+            <div class="col-span-2 sm:row-span-1 p-5">
+              <div class="flex justify-between mb-5">
+                <p class="font-bold text-lg">LiftLog</p>
+
+                <div class="flex">
+                  <a class="border-2 mr-3 border-gray-400 text-gray-500 text-lg rounded-md p-1 flex items-center justify-center" href="https://github.com/cse442-at-ub/project_s23-webarebears" target="_blank" rel="noopener noreferrer">
+                    <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mr-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path><path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path></svg>      -->
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                  </a>
+  
+                  <a class="border-2 border-gray-400 text-gray-500 text-lg rounded-md p-1 flex items-center justify-center" href="https://github.com/Junstinr/lift-log" target="_blank" rel="noopener noreferrer">
+                    <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mr-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path><path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path></svg>      -->
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+              </div>
+
+              <p class="flex justify-start text-start text-sm mb-5">
+                The LiftLog App is a mobile application that allows users to search for exercises, select them, and create customized workout routines. 
+                Users can search for exercises based on specific body parts, view exercise details, and add exercises to their workout routine.
+
+
+              </p>
+
+              <div class="flex justify-start text-center items-center mb-5">
+                <span class="text-gray-500 text-sm">Made with:</span> 
+                <div class="grid grid-cols-5 place-items-center">
+                  <img class="w-8 h-8" src="img/html.png" alt="html">
+                  <img class="w-8 h-8" src="img/css.png" alt="css">
+                  <img class="w-8 h-8" src="img/javascript.png" alt="javascript">
+                  <img class="w-10 h-7" src="img/php.png" alt="php">
+                  <img class="w-13 h-7 ml-2" src="img/mysql.png" alt="sql">
+                </div>
+              </div>
+              
+              <div class="flex justify-end">
+                <a class="border-gray-400 border-2 text-gray-500 rounded-md p-2 hover:scale-105  " href="./liftlog.html">Read More</a>
+              </div>
+            </div>
+          </div>
 
           <!-- Room8 -->
           <div class="grid grid-cols-1 md:grid-cols-3 h-auto lg:h-80 w-5/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
-            <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 p-5 flex items-center justify-center">
+            <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 flex items-center justify-center">
               <div>
                 <p class="text-2xl font-bold flex justify-center mt-5 text-white">Room8</p>
                 <img class="w-20 h-20 shadow-black shadow-lg rounded-full mt-4 mb-4 mx-auto" src="img/temp-logo.png" alt="logo">
+                
               </div>
-            
+              <!-- <img class="" src="img/home.png" alt="home"> -->
             </div>
 
             <div class="col-span-2 sm:row-span-1 p-5">
@@ -323,7 +371,8 @@
               <div class="flex justify-start text-center items-center">
                 <span class="text-gray-500 text-sm">Made with:</span> 
                 <div class="grid grid-cols-5 place-items-center">
-                  <img class="w-14 h-6" src="img/scala.png" alt="scala">                </div>
+                  <img class="w-14 h-6" src="img/scala.png" alt="scala">
+                </div>
               </div>
 
             </div>
@@ -545,14 +594,13 @@
     });
   </script>
     
-    <style>
-      nav a.active {
-        background-color: #e5e5e5; /* Equivalent to Tailwind's gray-200 */
-        color: #1f2937; /* Equivalent to Tailwind's gray-800 */
-      }
-    </style>
 
   <style>
+    nav a.active {
+      background-color: #e5e5e5; /* Equivalent to Tailwind's gray-200 */
+      color: #1f2937; /* Equivalent to Tailwind's gray-800 */
+    }
+
     .arrows {
     width: 60px;
     height: 72px;
