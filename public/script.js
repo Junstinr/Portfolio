@@ -1,8 +1,11 @@
-import { gsap } from "gsap";
+import { gsap } from 'gsap';
 
 const card = document.getElementById('card');
 
-gsap.to(card, {rotate: 360, duration: 1});
+console.log("Before animation");
+gsap.to(card, { rotate: 360, duration: 1 });
+console.log("After animation");
+
 
 const intro = document.getElementById('intro');
 
