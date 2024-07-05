@@ -16,7 +16,7 @@
 </head> 
 
 
-<body class="font-mono bg-gray-100 flex flex-nowrap ">
+<body class="font-mono bg-gray-100 flex flex-wrap ">
     <!--NAV-->
 
     <button id="menuToggle" class="xl:hidden fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-lg">
@@ -92,7 +92,7 @@
               </p>
               
               <br>
-              <p class="flex justify-center text-center text-lg">
+              <p class=" flex justify-center text-center text-lg">
                   I'm a software developer from the University at Buffalo.</span>
               </p>
 
@@ -139,11 +139,11 @@
 
         <!--Project-->
       <section id="projects">
-        <p class="flex justify-center font-extrabold mb-10 text-2xl">My Projects</p>
-        <div class="h-fit bg-gray-100 grid grid-cols-1 gap-10">
+        <p class="flex justify-center font-extrabold mb-20 text-2xl">My Projects</p>
+        <div class="h-fit bg-gray-100 grid grid-cols-1 gap-24">
 
           <!-- LiftLog -->
-          <div class="grid grid-cols-1 md:grid-cols-3 h-auto lg:h-80 w-5/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
+          <div class="card grid grid-cols-1 md:grid-cols-3 h-auto lg:h-72 w-4/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-3">
             <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 flex items-center justify-center">
               <div>
                 <p class="text-2xl font-bold flex justify-center mt-5 text-white">LiftLog</p>
@@ -153,7 +153,7 @@
               <!-- <img class="" src="img/home.png" alt="home"> -->
             </div>
 
-            <div class="col-span-2 sm:row-span-1 p-5 flex flex-col h-full">
+            <div class="col-span-2 sm:row-span-1 p-3 flex flex-col h-full">
               <div class="flex justify-between mb-5">
                 <p class="font-bold text-lg">LiftLog</p>
 
@@ -184,11 +184,11 @@
                   <div class="flex justify-start  items-center">
                     <span class="text-gray-500 text-xs sm:text-sm">Made with:</span> 
                     <div class="grid grid-cols-5 place-items-center">
-                      <img class="w-8 h-8" src="img/html.png" alt="html">
-                      <img class="w-8 h-8" src="img/css.png" alt="css">
-                      <img class="w-8 h-8" src="img/javascript.png" alt="javascript">
-                      <img class="w-10 h-7" src="img/php.png" alt="php">
-                      <img class="w-13 h-7 ml-2" src="img/mysql.png" alt="sql">
+                      <img class="w-6 h-6" src="img/html.png" alt="html">
+                      <img class="w-6 h-6" src="img/css.png" alt="css">
+                      <img class="w-6 h-6" src="img/javascript.png" alt="javascript">
+                      <img class="w-8 h-5" src="img/php.png" alt="php">
+                      <img class="w-10 h-5 ml-2" src="img/mysql.png" alt="sql">
                     </div>
                   </div>
 
@@ -203,7 +203,7 @@
           </div>
 
           <!-- Room 8 -->
-          <div class="grid grid-cols-1 md:grid-cols-3 h-auto lg:h-80 w-5/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
+          <div class="card grid grid-cols-1 md:grid-cols-3 h-auto lg:h-72 w-4/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
             <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 flex items-center justify-center">
               <div>
                 <p class="text-2xl font-bold flex justify-center mt-5 text-white">Room8</p>
@@ -245,11 +245,11 @@
                 <div class="flex justify-start  items-center">
                   <span class="text-gray-500 text-xs sm:text-sm">Made with:</span> 
                   <div class="grid grid-cols-5 place-items-center">
-                    <img class="w-8 h-8" src="img/html.png" alt="html">
-                    <img class="w-8 h-8" src="img/css.png" alt="css">
-                    <img class="w-8 h-8" src="img/javascript.png" alt="javascript">
-                    <img class="w-10 h-7" src="img/php.png" alt="php">
-                    <img class="w-13 h-7 ml-2" src="img/mysql.png" alt="sql">
+                    <img class="w-6 h-6" src="img/html.png" alt="html">
+                    <img class="w-6 h-6" src="img/css.png" alt="css">
+                    <img class="w-6 h-6" src="img/javascript.png" alt="javascript">
+                    <img class="w-8 h-5" src="img/php.png" alt="php">
+                    <img class="w-10 h-5 ml-2" src="img/mysql.png" alt="sql">
                   </div>
                 </div>
 
@@ -264,7 +264,7 @@
           </div>
 
           <!-- TopHat -->
-          <div class="grid grid-cols-1 md:grid-cols-3 h-auto lg:h-80 w-5/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
+          <div class="card grid grid-cols-1 md:grid-cols-3 h-auto lg:h-72 w-4/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
             <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 flex items-center justify-center">
               <div>
                 <p class="text-2xl font-bold flex justify-center mt-5 text-white">TopHat Clone</p>
@@ -293,8 +293,7 @@
               </div>
 
               <p class="flex justify-start text-start text-sm mb-5">
-                Worked in a five-member team to clone Top Hat, a powerful course management website. Developed using Python, Flask, and MongoDB
-                with a focus on seamless backend/frontend integration. Integrated user authentication, real-time communication, and data management
+                Worked in a five-member team to clone Top Hat, a powerful course management website. Integrated user authentication, real-time communication, and data management
                 for secure login/register, course creation, and enrollment.
               </p>
 
@@ -306,16 +305,16 @@
                 <div class="flex justify-start  items-center">
                   <span class="text-gray-500 text-xs sm:text-sm">Made with:</span> 
                   <div class="grid grid-cols-5 place-items-center">
-                    <img class="w-14 h-8" src="img/python.png" alt="python">
-                    <img class="w-16 h-8 mr-2" src="img/mongodb.png" alt="mongodb">
-                    <img class="w-14 h-9" src="img/flask.png" alt="flask">
+                    <img class="w-12 h-6" src="img/python.png" alt="python">
+                    <img class="col-span-2 w-14 h-6 mr-2" src="img/mongodb.png" alt="mongodb">
+                    <img class="w-12 h-7" src="img/flask.png" alt="flask">
                   </div>
                 </div>
 
-                <div class="flex mt-4 lg:mt-0 justify-end">
+                <div class="flex lg:mt-0 justify-end">
                   <a class="flex justify-center items-center text-xs lg:text-sm border-2 p-2  border-gray-400 text-gray-500 rounded  
                   hover:bg-gradient-to-tr from-gray-500 to-gray-900 transition ease-in duration-200 hover:border-transparent
-                    hover:text-white cursor-pointer text-center" href="./liftlog.html">Read More</a>
+                    hover:text-white cursor-pointer text-center" href="">Read More</a>
                 </div>
                   
               </div>
@@ -323,7 +322,7 @@
           </div>
 
           <!-- Stock Market Predictor -->
-          <div class="grid grid-cols-1 md:grid-cols-3 h-auto lg:h-80 w-5/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
+          <div class="card grid grid-cols-1 md:grid-cols-3 h-auto lg:h-72 w-4/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
             <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 flex items-center justify-center">
               <div>
                 <p class="text-2xl font-bold flex justify-center mt-5 text-white">Stock Predictor</p>
@@ -355,7 +354,6 @@
                 Collaborated with a team of three people to research and implement various
                 machine learning algorithms such as Linear Regression, Ridge Regression, and Lasso Regression to
                 analyze and predict stock market trends.
-                Utilized real-world historical data to train algorithms, resulting in a 93% of accuracy in prediction.
               </p>
 
               
@@ -366,7 +364,7 @@
                 <div class="flex justify-start  items-center">
                   <span class="text-gray-500 text-xs sm:text-sm">Made with:</span> 
                   <div class="grid grid-cols-5 place-items-center">
-                    <img class="w-14 h-8" src="img/python.png" alt="python">
+                    <img class="w-12 h-6" src="img/python.png" alt="python">
                   </div>
                 </div>
 
@@ -382,10 +380,10 @@
 
 
           <!-- Netflix -->
-          <div class="grid grid-cols-1 md:grid-cols-3 h-auto lg:h-80 w-5/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
+          <div class="card grid grid-cols-1 md:grid-cols-3 h-auto lg:h-72 w-4/6 bg-gray-200 rounded-lg shadow-xl mx-auto max-w-7xl p-5">
             <div class="col-span-1 sm:row-span-1 bg-gray-800 rounded-lg shadow-lg shadow-gray-400 flex items-center justify-center">
               <div>
-                <p class="text-2xl font-bold flex justify-center mt-5 text-white">Movie Recommendation</p>
+                <p class="text-2xl font-bold flex justify-center text-center mt-5 text-white">Movie Recommendation</p>
                 <img class="w-20 h-20 shadow-black shadow-lg rounded-full mt-4 mb-4 mx-auto" src="img/netflix.png" alt="logo">
                 
               </div>
@@ -393,7 +391,7 @@
             </div>
 
             <div class="col-span-2 sm:row-span-1 p-5 flex flex-col h-full">
-              <div class="flex justify-between mb-5">
+              <div class="flex justify-between text-center mb-5">
                 <p class="font-bold text-lg">Movie Recommendation</p>
 
                 <div class="flex">

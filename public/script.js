@@ -1,17 +1,31 @@
-gsap.registerPlugin(ScrollTrigger)
+document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(ScrollTrigger)
+  // gsap code here!
 
-const card = document.getElementById('card');
-gsap.to(".card", {
-  x: 400,
-  rotate: 360,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".card", // Element to trigger the animation
-    start: "top center", // Start trigger when the top of the card reaches the center of the viewport
-    end: "bottom center", // End trigger when the bottom of the card reaches the center of the viewport
-    // markers: true // Show markers for debug purposes (optional)
-  }
+
+// Animate each card individually
+document.querySelectorAll(".card").forEach(card => {
+  gsap.fromTo(card,
+    { scale: 1 },
+    { scale: 1.1, 
+      scrollTrigger: {
+        trigger: card,
+        start: "center bottom",
+        end: "bottom center",
+        scrub: 1, // Smoothens the animation
+        // markers: true,
+        toggleActions: "play none none reverse" // Only shrink when scrolling back up
+      }
+    }
+  );
 });
 
-const intro = document.getElementById('intro');
-gsap.to(intro, { rotate: 360, duration: 1 });
+ 
+
+
+
+
+ });
+
+
+
