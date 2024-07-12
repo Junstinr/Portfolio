@@ -19,7 +19,7 @@ particlesJS('particles-js',
         "value": 90,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
@@ -68,7 +68,7 @@ particlesJS('particles-js',
         "color": "#9ca3af",
         "random": "true",
         "opacity": 0.4,
-        "width": 1,
+        "width": 0.5,
       },
       "move": {
         "enable": true,
@@ -89,7 +89,7 @@ particlesJS('particles-js',
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,
