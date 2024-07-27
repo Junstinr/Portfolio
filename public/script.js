@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
   });
 
+
   //-----------------------------------------------SIDE NAV ANIMATION -----------------------------------------------
  
   const button = document.getElementById("hide-nav");
