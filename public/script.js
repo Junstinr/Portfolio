@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       
       // Animate button to original position
-      gsap.to(button, { left: '12rem', duration: 1, ease: "power4.inOut" });
+      gsap.to(button, { left: '12rem', duration: 0.8, ease: "power4.in" });
       // Show retract icon and hide expand icon
 
-      gsap.to(retractIcon, { opacity: 1, duration: 0.5, ease: 'none', onComplete: () => {
+      tl.to(retractIcon, { opacity: 1, duration: 0, ease: 'none', onComplete: () => {
         expandIcon.classList.add('hidden');
         retractIcon.classList.remove('hidden');
         button.classList.remove('bg-gray-800', 'rounded-full');
@@ -143,12 +143,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: 'none',
       });
 
-      gsap.to(button, { left: '1.5rem', duration: 0.5, ease: "power4.out", onComplete: () => {
+      gsap.to(button, { left: '1.5rem', duration: 1, ease: "power4.out" });
+  
+      gsap.to(retractIcon, { opacity: 0, duration: 0, onComplete: () => {
         button.classList.add('bg-gray-800', 'rounded-full');
       } });
-  
-      gsap.to(retractIcon, { opacity: 0, duration: 0.2 });
-      gsap.to(expandIcon, { opacity: 1, duration: 0.2, ease: "power4.out", onComplete: () => {
+      gsap.to(expandIcon, { opacity: 1, duration: 0, ease: "power4.out", onComplete: () => {
         retractIcon.classList.add('hidden');
         expandIcon.classList.remove('hidden');
         mainContent.classList.add('w-max');
